@@ -32,11 +32,6 @@ variants = [
     ['platform-linux', 'arch-x86_64', 'os-centos-7'],
 ]
 
-# Pass cmake arguments (with debug symbols):
-# rez-build -i -- -DCMAKE_POSITION_INDEPENDENT_CODE=1
-# rez-release -- -DCMAKE_POSITION_INDEPENDENT_CODE=1
-
-
 def pre_build_commands():
     command("source /opt/rh/devtoolset-6/enable")
 

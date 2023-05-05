@@ -73,6 +73,8 @@ option(FMT_PEDANTIC "Enable extra warnings and expensive tests." OFF)
 option(FMT_WERROR "Halt the compilation with an error on compiler warnings."
        OFF)
 
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
 # Options that control generation of various targets.
 option(FMT_DOC "Generate the doc target." OFF)
 option(FMT_INSTALL "Generate the install target." ${FMT_MASTER_PROJECT})
